@@ -1,0 +1,603 @@
+{
+  "type": [
+    "object"
+  ],
+  "properties": {
+    "cards": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "cohort": {
+            "type": [
+              "string"
+            ]
+          },
+          "holder": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "paid_fen": {
+            "type": [
+              "number"
+            ]
+          },
+          "product_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "sold_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "version": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "cohort",
+          "holder",
+          "id",
+          "paid_fen",
+          "product_id",
+          "sold_at",
+          "version"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "cash": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "amount_fen": {
+            "type": [
+              "number"
+            ]
+          },
+          "at": {
+            "type": [
+              "string"
+            ]
+          },
+          "card_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "period": {
+            "type": [
+              "string"
+            ]
+          },
+          "venue": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "amount_fen",
+          "at",
+          "card_id",
+          "id",
+          "kind"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "closures": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "from": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "items": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "known_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "to": {
+            "type": [
+              "string"
+            ]
+          },
+          "venue": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "from",
+          "id",
+          "items",
+          "known_at",
+          "to",
+          "venue"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "compensations": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "closure_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "items": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "requires_holder_confirmation": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "status": {
+            "type": [
+              "string"
+            ]
+          },
+          "target": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "closure_id",
+          "id",
+          "items",
+          "kind",
+          "requires_holder_confirmation",
+          "status",
+          "target"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "history": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "closure_days": {
+            "type": [
+              "number"
+            ]
+          },
+          "expired_visits": {
+            "type": [
+              "number"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "product": {
+            "type": [
+              "string"
+            ]
+          },
+          "season": {
+            "type": [
+              "string"
+            ]
+          },
+          "sold_week": {
+            "type": [
+              "number"
+            ]
+          },
+          "used_by_week": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "number"
+              ]
+            }
+          }
+        },
+        "required": [
+          "closure_days",
+          "expired_visits",
+          "id",
+          "product",
+          "season",
+          "sold_week",
+          "used_by_week"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "product_rules": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "consumption": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "product_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "refund": {
+            "type": [
+              "string"
+            ]
+          },
+          "version": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "consumption",
+          "id",
+          "product_id",
+          "refund",
+          "version"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "products": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "items": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "sale_price_fen": {
+            "type": [
+              "number"
+            ]
+          },
+          "transfer_limit": {
+            "type": [
+              "number"
+            ]
+          },
+          "valid_to": {
+            "type": [
+              "string"
+            ]
+          },
+          "venues": {
+            "type": [
+              "array"
+            ],
+            "items": {
+              "type": [
+                "string"
+              ]
+            }
+          },
+          "version": {
+            "type": [
+              "string"
+            ]
+          },
+          "visits": {
+            "type": [
+              "number"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "items",
+          "sale_price_fen",
+          "transfer_limit",
+          "valid_to",
+          "venues",
+          "version",
+          "visits"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "rights_changes": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "card_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "confirmed": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "effective": {
+            "type": [
+              "string"
+            ]
+          },
+          "from_holder": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "to_holder": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "card_id",
+          "confirmed",
+          "effective",
+          "from_holder",
+          "id",
+          "kind",
+          "to_holder"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "settlement_terms": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "from": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "item": {
+            "type": [
+              "string"
+            ]
+          },
+          "per_use_fen": {
+            "type": [
+              "number"
+            ]
+          },
+          "share": {
+            "type": [
+              "number"
+            ]
+          },
+          "venue": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "from",
+          "id",
+          "item",
+          "per_use_fen",
+          "share",
+          "venue"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "uses": {
+      "type": [
+        "array"
+      ],
+      "items": {
+        "type": [
+          "object"
+        ],
+        "properties": {
+          "card_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "holder": {
+            "type": [
+              "string"
+            ]
+          },
+          "id": {
+            "type": [
+              "string"
+            ]
+          },
+          "item": {
+            "type": [
+              "string"
+            ]
+          },
+          "known": {
+            "type": [
+              "string"
+            ]
+          },
+          "occurred": {
+            "type": [
+              "string"
+            ]
+          },
+          "venue": {
+            "type": [
+              "string"
+            ]
+          },
+          "visit_id": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "card_id",
+          "holder",
+          "id",
+          "item",
+          "known",
+          "occurred",
+          "venue",
+          "visit_id"
+        ],
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": [
+    "cards",
+    "cash",
+    "closures",
+    "compensations",
+    "history",
+    "product_rules",
+    "products",
+    "rights_changes",
+    "settlement_terms",
+    "uses"
+  ],
+  "additionalProperties": true,
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "跨雪场季卡的使用负债与清算口径合成资料格式"
+}
